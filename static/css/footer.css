@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.footer{
+    background-color: rgb(31, 30, 30);
+}
+.footer div div ul {
+    list-style: none;
+}
+.footer div div ul li{
+    padding: 2px;
+}
+.footer div div ul li,.footer div div ul li i{
+    color: rgba(214, 207, 207, 0.541);
+    font-weight: bold;
+    font-size: 14px;
+
+}
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+.icons li i:hover{
+    color: white;
+}
+.guide{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.guide  li{
+    font-size: 12px !important;
+}
+@media screen and (max-width:448px) {
+    .location {
+        font-size: 12.6px !important;
+    }
+}

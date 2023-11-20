@@ -1,0 +1,54 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.men{
+    position: sticky !important;
+    top: 0%;
+    background-color: white;
+    z-index: 100;
+}
+.men ,.col-lg-4 {
+    height: 60px;
+}
+.men .row .col-lg-4 ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+}
+.big-heading h1{
+    font-size: 65px;
+}
+.big-heading button{
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   border-radius: 20px;
+   border: 0px solid transparent;
+}
+.men-shop{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 20px;
+}
+.men-main{
+    width: 100%;
+    overflow:scroll;
+    scroll-behavior: auto;
+    padding-left: 4%;
+}
+.men-v {
+    display: flex;
+    
+}
+.men-v div img{
+    width: 30vw;
+    height: 70vh;
+    padding: 2%;
+
+}
