@@ -4,6 +4,18 @@
     box-sizing: border-box;
 
 }
+::-webkit-scrollbar{
+    width: 7px;
+    height: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #aca4a4;
+    width: 5px;
+    border-radius: 20px;
+}
 .men{
     position: sticky !important;
     top: 0%;
@@ -23,7 +35,7 @@
 .big-heading h1{
     font-size: 65px;
 }
-.big-heading button{
+.big-heading button,.men-v div button{
    background-color: black;
    color: white;
    font-weight: bold;
@@ -35,6 +47,8 @@
     justify-content: space-between;
     font-weight: bold;
     font-size: 20px;
+    position:relative;
+    left: 0px;
 }
 .men-main{
     width: 100%;
@@ -52,3 +66,64 @@
     padding: 2%;
 
 }
+.men-v-img,.featured,.latest-text{
+    font-weight: bold !important;
+    font-size: 18px !important;
+}
+.featured img{
+    width: 100%;
+}
+.latest{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.latest div img{
+    height: 80vh;
+}
+.latest div div{
+    position: relative;
+    top: -20%;
+}
+.latest div div p{
+    font-weight: bold;
+    color: white;
+}
+.latest div div button{
+    background-color: white;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 1px solid transparent;
+}
+.edit1{
+    background-color: white !important;
+    color: black !important;
+    border-radius: 0px !important;
+    border-bottom: 2px solid black !important;
+    font-weight: bold !important;
+}
+.big-drop{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 36.8vh;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    background-color: white;
+}
+.big-drop:hover{
+    /* overflow:visible; */
+    height: 70vh;
+}
+.drop ul{
+    list-style: none;
+    font-weight: bold;
+    color: rgba(148, 139, 139, 0.651);
+}
+.drop ul li{
+    padding: 2px 0px 2px 0px;
+}
+.drop ul li p{
+    color: black !important;
+}
+

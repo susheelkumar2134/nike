@@ -51,6 +51,15 @@
 .bottom-center{
     width: 50%;
 }
+.big-drop{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 36.8vh;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    background-color: white;
+}
 .bottom-center ul{
     display: flex;
     justify-content: space-evenly;
