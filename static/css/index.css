@@ -58,7 +58,6 @@
 }
 .men-v {
     display: flex;
-    
 }
 .men-v div img{
     width: 30vw;
@@ -77,6 +76,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    
 }
 .latest div img{
     height: 80vh;
@@ -106,7 +106,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    height: 36.8vh;
+    height: 230px;
     overflow: hidden;
     transition: 0.5s ease-in-out;
     background-color: white;
@@ -126,4 +126,98 @@
 .drop ul li p{
     color: black !important;
 }
+.after-drop{
+    display: none;
+}
 
+@media screen and (max-width: 850px) {
+    
+    .latest div div{
+        position: relative;
+        top: -35%;
+    }
+    /* .big-drop{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        height: 230px;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+        background-color: white;
+    } */
+
+    .drop ul{
+        font-size: small;
+    }
+    
+    
+}
+@media screen and (max-width: 770px) {
+    .latest{
+        width: 100%;
+        display: block;
+    }
+    .latest div img{
+        width: 100%;
+        padding-bottom: 10px;
+    }
+    .latest div div{
+        display: none;
+        padding-bottom: 10px;
+    }
+    .drop ul li{
+        padding: 0px 0px 0px 0px;
+    }
+    .big-drop{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        height: 220px;
+        overflow: hidden;
+        transition: 0.5s ease-in-out;
+        background-color: white;
+    }
+   
+}
+@media screen and (max-width: 650px) {
+    .big-drop{
+        display: none;
+    }
+    .after-drop{
+        display: block;
+    }
+    .top-right{
+        display: none;
+    }
+    .men-v {
+        display: block;
+    }
+    .men-v div img{
+        width: 90vw;
+        height: 70vh;
+        padding: 2%;
+    
+    }
+    .divi{
+        display: block;
+        padding: 0px 10px 0px 10px;
+        background-color: white;
+        width: 100vw;
+    }
+    .bl{
+        display: block !important;
+    }
+    #one,#two,#three,#four{
+        font-weight: bold;
+    }
+    #one-drop,#two-drop,#three-drop,#four-drop{
+        list-style: none;
+        font-weight: bold;
+        color: rgb(77, 74, 74);
+        transition-property: height ;
+        transition-duration: 1s;
+        transition-timing-function: ease-in-out;
+       
+    }
+   
+}

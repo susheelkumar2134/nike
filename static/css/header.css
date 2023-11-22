@@ -51,15 +51,6 @@
 .bottom-center{
     width: 50%;
 }
-.big-drop{
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    height: 36.8vh;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-    background-color: white;
-}
 .bottom-center ul{
     display: flex;
     justify-content: space-evenly;
@@ -69,29 +60,41 @@
     color: rgba(0, 0, 0, 0.712);
     cursor: pointer;
 }
-
-.bottom-center ul li div{
+.bottom-center ul .dr{
+    transition: 0.5s ease-in-out;
+}
+.bottom-center ul .dr div div ul li p{
+    color: black;
+}
+.bottom-center ul .dr div{
     width: 100vw;
-    height: 100px;
     display: none;
     position: absolute;
+    transition:2s ease-in;
     left: 0%;
     background-color: white;
     z-index: 99;
     margin-top: 2px;
+    z-index: 111;
+    transition: 0.5s ease-in-out;
 }
+/* .flex-drop{
+    display: flex;
+} */
 .bottom-center ul li:hover{
     border-bottom: 2px solid black;
 
 }
-.bottom-center ul li:hover > div{
-    border-bottom: 2px solid black;
+.bottom-center ul .dr:hover > div{
     display: block;
+    
+    /* overflow-x: hidden; */
 
 }
 
 .bottom-right{
     width: 30%;
+    display: flex;
 }
 .bottom-right ul{
     display: flex;
@@ -107,25 +110,77 @@
     padding-left: 8px;
     background-color: #f5f5f5;
     border-radius: 20px;
-    width: 55%;
+    width: 60%;
 }
 .search input{
     color: #c4b7b7;
     background-color: #f5f5f5;
     border: 0px solid #f5f5f5;
+    border-radius: 20px;
     font-size: 16px;
     font-weight: bolder;
     width: 55%;
-    padding-top: 7px;
-    padding-bottom: 7px;
+    padding-top: 5px;
+    padding-bottom: 2px;
 }
+#collap3{
+    display: flex;
+    list-style: none;
+}
+#main-menu, #main-cross{
+    display: none;
+}
+/* .after-navbar{
+    display: none;
+} */
 
+@media screen and (max-width: 850px){
+    .bottom-center, .bottom-right {
+        display: none;
+    } 
+    #main-menu{
+        display: block;
+        position: absolute;
+        right: 8%;
+        top: 11%;
+        font-weight: bold;
+        font-size: 23px;
+    }
+    .after-navbar{
+        width: 45%;
+        height: 100vh;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        z-index: 200;
+        background-color: white;
+    }
+    .after-navbar ul{
+        list-style: none;
+        font-size: 30px;
+        /* font-weight: bold; */
+    }
+    .after-navbar ul li{
+        display: flex;
+        justify-content: space-between;
+    }
+}
 @media screen and (max-width: 998px) {
     .bottom-center ul li{
         font-size: 12px;
         /* padding-top: 14px; */
     }
   }
+@media screen and (max-width: 740px){
+    .after-navbar{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 500px){
+    .after-navbar{
+        width: 80%;
+    }
+}
 
 /* bottom navber end */
 
